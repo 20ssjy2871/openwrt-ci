@@ -42,6 +42,7 @@ echo "CONFIG_PACKAGE_kmod-usb3=n" >> ./.config
 echo "CONFIG_PACKAGE_wpad-openssl=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y" >> ./.config
+echo "CONFIG_PACKAGE_rpcd-mod-iwinfo=n" >> ./.config
 
 #手动调整的插件
 if [ -n "$WRT_PACKAGE" ]; then
