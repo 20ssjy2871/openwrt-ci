@@ -30,6 +30,18 @@ fi
 #配置文件修改
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
+echo "CONFIG_PACKAGE_ipq-wifi-zn_m2=n" >> ./.config
+echo "CONFIG_PACKAGE_iwinfo=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-fs-ext4=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-qca-nss-drv-wifi-meshmgr=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-usb-core=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-usb-dwc3=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-usb-dwc3-qcom=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-usb-xhci-hcd=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-usb3=n" >> ./.config
+echo "CONFIG_PACKAGE_wpad-openssl=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y" >> ./.config
 
 #手动调整的插件
 if [ -n "$WRT_PACKAGE" ]; then
