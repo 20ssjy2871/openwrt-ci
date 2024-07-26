@@ -36,12 +36,6 @@ if [ -n "$WRT_PACKAGE" ]; then
 	echo "$WRT_PACKAGE" >> ./.config
 fi
 
-#高通平台锁定512M内存
-if [[ $WRT_TARGET == *"IPQ"* ]]; then
-	echo "CONFIG_ATH11K_MEM_PROFILE_1G=n" >> ./.config
-	echo "CONFIG_ATH11K_MEM_PROFILE_512M=y" >> ./.config
-fi
-
 #科学插件设置
 if [[ $WRT_REPO == *"lede"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
